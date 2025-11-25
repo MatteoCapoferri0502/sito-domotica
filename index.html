@@ -11,38 +11,74 @@
 </head>
 <body>
 
-    <nav>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo Smart Home" height="40"> 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="Logo Smart Home" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="chisiamo.html">Chi Siamo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+                </ul>
+            </div>
         </div>
-        <ul class="menu-lista">
-            <li><a href="#">Home</a></li>
-            <li><a href="chisiamo.html">Chi Sono</a></li>
-            <li><a href="#">Servizi</a></li>
-            <li><a href="#">Contatti</a></li>
-        </ul>
     </nav>
     
-    <div class="d-flex align-items-center justify-content-center" style="min-height: calc(100vh - 60px);">
-        
-        <div class="contenitore card p-4 shadow">
-            <h1>Benvenuto nel mio sito!</h1>
-            <h2 class="text-primary">Smart Home</h2>
-            <img src="img/mia-foto.jpg" alt="Illustrazione Domotica" class="img-fluid mb-3" style="max-width: 300px;">
-            <p>La tecnologia per la casa è il futuro.</p>
-            <button class="btn btn-primary">Scopri di più</button>
+    <header class="hero-section text-center d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4">Controlla la tua casa, ovunque tu sia.</h1>
+            <p class="lead">Soluzioni smart per una vita più semplice e sicura.</p>
         </div>
+    </header>
 
-    </div>
+    <main class="container my-5">
+        <section class="text-center">
+            <img src="img/domotica-wifi.jpg" alt="Domotica WiFi" class="img-fluid rounded shadow-lg mb-4" style="max-width: 500px; position: relative; z-index: 1;">
+            <h2>Cos'è la Domotica WiFi?</h2>
+            <p class="lead">La domotica WiFi connette i dispositivi della tua casa a Internet, permettendoti di controllarli da remoto tramite smartphone o tablet. Gestisci luci, temperatura, sicurezza e molto altro con un semplice tocco.</p>
+        </section>
 
-    <div class="container my-5">
-        <h2 class="mb-4">I Nostri Servizi Smart</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4"><div class="card shadow-sm h-100"><div class="card-body text-center"><h3>💡 Luce Smart</h3><p>Controlla l'illuminazione.</p></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card shadow-sm h-100"><div class="card-body text-center"><h3>🌡️ Termostato</h3><p>Ottimizza il consumo energetico.</p></div></div></div>
-            <div class="col-md-4 mb-4"><div class="card shadow-sm h-100"><div class="card-body text-center"><h3>🔒 Sicurezza</h3><p>Sistemi di allarme connessi.</p></div></div></div>
-        </div>
-    </div>
+        <hr class="my-5">
+
+        <section>
+            <h2 class="text-center mb-4">Funzionalità Principali</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Illuminazione Intelligente</h3>
+                            <p class="card-text">Crea l'atmosfera perfetta per ogni momento. Regola intensità e colore delle luci, imposta orari di accensione e spegnimento per risparmiare energia.</p>
+                            <a href="#" class="btn btn-outline-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Climatizzazione Automatica</h3>
+                            <p class="card-text">Mantieni la temperatura ideale in ogni stanza. Il nostro sistema impara dalle tue abitudini per ottimizzare i consumi e garantirti il massimo comfort.</p>
+                            <a href="#" class="btn btn-outline-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Sicurezza Avanzata</h3>
+                            <p class="card-text">Proteggi la tua casa con sensori di movimento, telecamere e serrature smart. Ricevi notifiche in tempo reale e controlla tutto dal tuo smartphone.</p>
+                            <a href="#" class="btn btn-outline-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <div class="container">
@@ -50,6 +86,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

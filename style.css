@@ -1,62 +1,52 @@
-/* 1. RESET GENERALE E CORREZIONE NAV BAR */
+/* Stile generale del corpo */
 body {
-    margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
-    box-sizing: border-box;
-    /* Spazio per la Navbar */
-    padding-top: 60px; 
+    background-color: #f8f9fa; /* Sfondo chiaro */
+    padding-top: 70px; /* Spazio per la navbar fissa */
 }
 
-/* 2. STILE NAVBAR FISSA */
-nav {
-    background-color: #2c3e50;
-    color: white;
-    height: 60px;
-    width: 100%;
-    
-    /* FIX PER LA POSIZIONE FISSA */
-    position: fixed; 
-    top: 0;
-    left: 0;
-    z-index: 1000; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 0 20px;
+/* Stile della Navbar */
+.navbar {
+    transition: background-color 0.3s;
 }
 
-.logo img {
-    height: 40px; 
-    width: auto;
-    vertical-align: middle; 
-}
-
-/* 3. STILE LISTA MENU */
-.menu-lista {
-    list-style: none;
-    display: flex;    
-    gap: 25px;        
-    margin: 0;
-    padding: 0;
-}
-
-.menu-lista a {
-    text-decoration: none; 
-    color: white;
-    font-size: 1rem;
-    font-weight: 500;
+.nav-link {
     transition: color 0.3s;
 }
 
-.menu-lista a:hover {
-    color: #3498db;
+.nav-link:hover {
+    color: #007bff; /* Colore primario di Bootstrap */
 }
 
-/* 4. STILE DEL CONTENITORE CENTRALE PERSONALIZZATO */
-.contenitore {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px; 
+/* Sezione Hero */
+.hero-section {
+    background-color: #b0c4de; /* Placeholder background color */
+    height: 60vh;
+    color: #343a40; /* Dark text for better contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Card delle funzionalità */
+.feature-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Z-index per l'immagine */
+.img-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+/* Stile del footer */
+footer {
+    background-color: #343a40; /* Colore scuro di Bootstrap */
 }
